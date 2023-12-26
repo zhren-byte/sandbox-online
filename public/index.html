@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3d</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <button id="createBox">Colocar Objecto</button>
+		<input type="range" id="boxW" value="100" min="0" max="300" />
+		<input type="range" id="boxH" value="100" min="0" max="300" />
+		<input type="range" id="boxL" value="100" min="0" max="300" />
+		<input type="color" id="colorI" value="#1a71ff" />
+    <select id="objectType">
+      <option value="cubo">Cubo</option>
+      <option value="pilar">Pilar</option>
+      <option value="esfera">Esfera</option>
+      <option value="piramide">Piramide</option>
+    </select>
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
